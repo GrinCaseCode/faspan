@@ -1298,6 +1298,9 @@
     .about-bottom, .about-info {
         margin-bottom: 35px;
     }
+    .consultation + .footer {
+        margin-top: 60px;
+    }
     .about-info .text-page {
         margin-left: 0;
         margin-top: 25px;
