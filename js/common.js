@@ -138,14 +138,12 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 	$(".item-sidebar__head").click(function() {
 		$(this).parent().toggleClass("active");
 		$(this).siblings().slideToggle(200);
-		$(this).parent().siblings(".item-sidebar").removeClass("active");
-		$(this).parent().siblings(".item-sidebar").find(".item-sidebar__content").slideUp(200);
 	});
 
 	$(".item-select").click(function () {
 		let color =  $(this).find('.item-select__color').css('background-color');
 		$(".color-primary").css("fill", `${color}`);
-		$(".item-select").removeClass("active");
+		$(this).parents(".item-sidebar").find(".item-select").removeClass("active");
 		$(this).addClass("active");
 	});
 
